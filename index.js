@@ -1,6 +1,7 @@
 var readlineSync= require("readline-sync");
 var chalk= require("chalk");
 
+//this is an array to check if the date for the month is valid
 var monthDays=[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 console.log(chalk.cyanBright("******Welcome******\n\n"));
@@ -11,7 +12,7 @@ console.log(chalk.cyanBright(`\nHi ${userName}, I will tell you if your birth da
 
 takeDate();
 
-
+//function to take date input from user
 function takeDate(){
   var inputDate = readlineSync.question(chalk.greenBright("Please enter your birthdate in the format 'DD/MM'\n"));
 
